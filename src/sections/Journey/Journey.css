@@ -1,0 +1,171 @@
+.journey-section {
+  padding: clamp(4.5rem, 7vw, 6rem) 1.5rem 6rem;
+  background: linear-gradient(180deg, rgba(6, 7, 10, 0.95), rgba(6, 7, 10, 1));
+}
+
+.journey-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.journey-heading {
+  text-align: center;
+  margin-bottom: 3.35rem;
+}
+
+.journey-kicker {
+  margin: 0 0 0.6rem;
+  color: #7fb0ff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.journey-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  color: #f5f7ff;
+}
+
+.journey-subtitle {
+  margin: 0.9rem auto 0;
+  max-width: 760px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(245, 247, 255, 0.76);
+}
+
+.timeline {
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0.75rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(127, 176, 255, 0.95), rgba(127, 176, 255, 0.15));
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2.2rem 1fr;
+  align-items: start;
+  gap: 0;
+  margin-bottom: 1.65rem;
+}
+
+.timeline-marker {
+  grid-column: 2;
+  justify-self: center;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-top: 1.15rem;
+  border-radius: 999px;
+  background: #7fb0ff;
+  box-shadow: 0 0 0 0.38rem rgba(127, 176, 255, 0.18);
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.timeline-card {
+  position: relative;
+  padding: 1.25rem 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 1.2rem;
+  color: #f5f7ff;
+}
+
+.timeline-card-left {
+  grid-column: 1;
+  margin-right: 1.75rem;
+}
+
+.timeline-card-right {
+  grid-column: 3;
+  margin-left: 1.75rem;
+}
+
+.timeline-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 0.65rem;
+}
+
+.timeline-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: rgba(127, 176, 255, 0.18);
+  color: #9ec5ff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
+}
+
+.timeline-card h3 {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.4;
+}
+
+.timeline-institution {
+  margin: 0 0 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #9ec5ff;
+}
+
+.timeline-description {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  color: rgba(245, 247, 255, 0.78);
+}
+
+@media (max-width: 760px) {
+  .journey-section {
+    padding: 4.25rem 1rem 5rem;
+  }
+
+  .timeline::before {
+    left: 1rem;
+    transform: none;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    padding-left: 1.8rem;
+  }
+
+  .timeline-marker {
+    grid-column: 1;
+    justify-self: start;
+    margin-top: 1.2rem;
+    transform: translateX(-1.5rem);
+  }
+
+  .timeline-card,
+  .timeline-card-left,
+  .timeline-card-right {
+    grid-column: 1;
+    margin: 0;
+    width: 100%;
+  }
+}
