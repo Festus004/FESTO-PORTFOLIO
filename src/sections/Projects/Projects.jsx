@@ -1,7 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import './Projects.css';
-import muunganoxImage from './muunganox.png';
-
 const projects = [
   {
     title: 'MUUNGANO X – AI-Powered Learning Platform',
