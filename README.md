@@ -1,16 +1,102 @@
-# React + Vite
+# 🌐 Festo Erick Mapunda – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website.
 
-Currently, two official plugins are available:
+This portfolio showcases my projects, technical skills, and engineering journey in **Data Engineering, Cloud Computing, Generative AI, and Full Stack Development**. It is designed to highlight real-world projects, modern web development practices, and my passion for building scalable software solutions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Website
+🔗 **Portfolio:** *https://moonlit-halva-49e959.netlify.app/*
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 👨‍💻 About Me
 
-## Expanding the ESLint configuration
+I am **Festo Erick Mapunda**, a Computer & Communication Engineering student at **Sri Eshwar College of Engineering, India**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I am passionate about designing scalable applications, building intelligent systems, and solving real-world problems using modern technologies.
+
+My primary interests include:
+
+- 📊 Data Engineering
+- ☁️ Cloud Computing
+- 🤖 Generative AI
+- 💻 Full Stack Development
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+- SQL
+
+### Cloud & DevOps
+- AWS
+- Docker
+- Git
+- GitHub
+
+### Data Engineering
+- Python
+- Pandas
+- Apache Spark
+- ETL
+- Data Warehousing
+
+### AI
+- Google Gemini AI
+- Prompt Engineering
+- LangChain
+- RAG
+
+---
+
+# 📂 Featured Projects
+
+### 🎓 NextGen LMS – AI-Powered Learning Management System
+A full-stack Learning Management System featuring secure authentication, role-based dashboards, course management, certificate generation, and a Gemini AI-powered Smart Tutor.
+
+---
+
+### 🇹🇿 MUUNGANO X – AI-Powered Learning Platform
+A mobile-first educational platform that teaches the history and importance of the Union of Tanzania using AI-powered lessons, gamification, quizzes, XP rewards, badges, and personalized learning experiences.
+
+---
+
+### 🏙 Smart City Complaint App
+A civic engagement platform enabling citizens to report municipal and infrastructure issues with geolocation-based routing and image uploads.
+
+---
+
+### 💼 Job Portal System
+A recruitment platform connecting employers and job seekers with secure authentication and application workflows.
+
+---
+
+# 📫 Contact
+
+**Email:** Festuserick4@gmail.com
+
+**LinkedIn:**  
+https://www.linkedin.com/in/festo-erick-mapunda-30965633a/
+
+**GitHub:**  
+https://github.com/Festus004
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a **Star ⭐** on GitHub.
