@@ -100,20 +100,29 @@ function Projects() {
 
         <motion.div
           className="projects-grid"
+          animate="visible"
           initial="hidden"
-          whileInView="visible"
           viewport={{ once: true, amount: 0.16 }}
           variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.09 } } }}
         >
           {projects.map((project, index) => (
-            <motion.article
-              className="project-card"
-              key={project.title}
-              variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: index * 0.04 } } }}
-              whileHover={{ y: -6, scale: 1.01 }}
-              transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-            >
-              <motion.a
+         <motion.article
+  className="project-card"
+  key={project.title}
+  variants={{
+    hidden: { opacity: 0, y: 18 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.45,
+        ease: [0.22, 1, 0.36, 1],
+        delay: index * 0.04
+      }
+    }
+  }}
+>
+              <a
                 className="project-media"
                 href={project.demo || '#'}
                 target="_blank"
@@ -133,7 +142,7 @@ function Projects() {
                     <span>{project.category}</span>
                   </div>
                 )}
-              </motion.a>
+              </a>
 
               <div className="project-body">
                 <div className="project-meta">
@@ -164,39 +173,30 @@ function Projects() {
                 </div>
 
                 <div className="project-actions">
-                  <motion.a
-                    href={project.github || '#'}
-                    className="project-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ y: -2, scale: 1.01 }}
-                    whileTap={{ scale: 0.98 }}
-                    transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-                  >
-                    GitHub
-                  </motion.a>
-                  <motion.a
-                    href={project.demo || '#'}
-                    className="project-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ y: -2, scale: 1.01 }}
-                    whileTap={{ scale: 0.98 }}
-                    transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-                  >
-                    Live Demo
-                  </motion.a>
-                  <motion.a
-                    href={project.video || '#'}
-                    className="project-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ y: -2, scale: 1.01 }}
-                    whileTap={{ scale: 0.98 }}
-                    transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-                  >
-                    Watch Demo
-                  </motion.a>
+               <a
+                href={project.github || '#'}
+                className="project-link"
+                 target="_blank"
+                  rel="noopener noreferrer"
+                >
+                GitHub
+                </a>
+               <a
+  href={project.github || '#'}
+  className="project-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Live Demo
+</a>
+                 <a
+  href={project.github || '#'}
+  className="project-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Watch Demo
+</a>
                 </div>
               </div>
             </motion.article>

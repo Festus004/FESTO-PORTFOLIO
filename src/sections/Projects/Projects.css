@@ -69,14 +69,16 @@
   height: 100%;
   border-radius: 1.35rem;
   border: 1px solid rgba(255,255,255,0.08);
-  background: #111827;   /* simple solid background */
+  background: #111827;
   box-shadow: 0 28px 70px rgba(2,8,23,.38);
 
-  /* REMOVE THESE FOR NOW */
-  /* backdrop-filter: blur(16px); */
-  /* overflow: hidden; */
+  /* Removed because some mobile browsers don't render them correctly */
+  overflow: visible;
 
-  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
 }
 
 .project-card:hover {
@@ -96,17 +98,23 @@
   position: relative;
   border-radius: 1.2rem;
   min-height: 280px;
-  border: 1px solid rgba(255,255,255,.08);
-  background: linear-gradient(135deg,#2563eb,#1e3a8a);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:white;
-  font-weight:700;
 
-  /* REMOVE */
-  /* isolation:isolate; */
-  /* overflow:hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg,#2563eb,#1e3a8a);
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  /* Mobile-safe */
+  overflow: visible;
 }
 
 .project-media:hover .project-media-inner,
@@ -115,6 +123,7 @@
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 14px 28px rgba(2, 8, 23, 0.24);
 }
 
+/*
 .project-media-inner::after {
   content: "";
   position: absolute;
@@ -128,6 +137,7 @@
 .project-card:hover .project-media-inner::after {
   transform: translateX(100%);
 }
+  */
 
 .project-body {
   display: flex;
@@ -299,4 +309,21 @@
   .project-link {
     width: 100%;
   }
+}
+
+/* ---------- Mobile Rendering Fix ---------- */
+
+@media (max-width: 768px) {
+
+  .project-card,
+  .project-body,
+  .project-media,
+  .project-media-inner {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    filter: none !important;
+    will-change: auto;
+  }
+
 }
